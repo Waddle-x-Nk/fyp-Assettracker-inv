@@ -1,0 +1,116 @@
+.administrator {
+    font-weight: 500;
+  }
+  .portal {
+    font-size: 50px;
+    font-family: Inter;
+  }
+  .administrator-portal1 {
+    margin-block-start: 0;
+    margin-block-end: 5px;
+  }
+  .administrator-portal-txt-container {
+    line-break: anywhere;
+    width: 100%;
+  }
+  .administrator-portal {
+    position: absolute;
+    top: 267px;
+    left: 95px;
+    display: flex;
+    align-items: center;
+    width: 598px;
+    height: 495px;
+  }
+  .administrator-portal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: #22577a;
+    width: 797px;
+    height: 1024px;
+    overflow: hidden;
+    color: #fff;
+  }
+  .welcome {
+    position: relative;
+  }
+  .password-wrapper,
+  .username-wrapper,
+  .welcome-wrapper {
+    position: absolute;
+    top: 200px;
+    left: 968px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .password-wrapper,
+  .username-wrapper {
+    top: 363px;
+    left: 847px;
+    font-size: 25px;
+  }
+  .password-wrapper {
+    top: 537px;
+  }
+  .login-child,
+  .login-item {
+    border: 0;
+    font-weight: 500;
+    font-family: Inter;
+    font-size: 20px;
+    background-color: #e4d3d3;
+    position: absolute;
+    top: 418px;
+    left: 857px;
+    border-radius: 5px;
+    width: 486px;
+    height: 63px;
+    overflow: hidden;
+    opacity: 0.9;
+  }
+  .login-item {
+    top: 592px;
+  }
+  .sign-in {
+    position: relative;
+    font-weight: 600;
+  }
+  .sign-in-wrapper {
+    text-decoration: none;
+    position: absolute;
+    top: 698px;
+    left: 997px;
+    border-radius: 10px;
+    background-color: #22577a;
+    width: 233px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+  }
+  .login {
+    text-decoration: none;
+    position: relative;
+    background-color: #fafafa;
+    width: 100%;
+    height: 1024px;
+    text-align: left;
+    font-size: 70px;
+    color: #22577a;
+    font-family: Inter;
+  }
+  
+  body {
+    margin: 0;
+    line-height: normal;
+  }
