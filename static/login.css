@@ -1,0 +1,247 @@
+/* Dark Theme */
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#Loginform {
+  background: #292929;
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.column1 {
+  padding: 50px;
+  flex: 1;
+  background: #3d3d3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column2 {
+  flex: 1;
+  background: #5a5252;
+  background-image: url(../static/bg4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.input-control input {
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: 100%;
+  margin-top: 5px;
+  background: #404040;
+  border: 1px solid #666;
+  color: #f0f0f0;
+  transition: background 0.3s, border 0.3s;
+}
+
+.input-control input:focus {
+  background: #555;
+  border: 1px solid #888;
+  outline: none;
+  box-shadow: 0 0 5px rgba(136, 136, 136, 0.7);
+}
+
+.input-control label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.h1 {
+  background: linear-gradient(to right, #948686, #715050);
+  color: #f0f0f0;
+  padding: 20px 30px;
+  text-align: center;
+  margin: 0 0 50px 0;
+  border-radius: 8px;
+  font-size: 26px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  font-size: 1.1em;
+  color: #f0f0f0;
+  background: linear-gradient(to right, #472a2a, #715050);
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: 100%;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background: #6f4f28;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mytext {
+  background: #7a7676;
+  color: #f0f0f0;
+  padding: 15px 25px;
+  text-align: center;
+  margin: 0 0 50px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 22px;
+}
+
+.column2 p {
+  background: rgba(109, 96, 96, 0.85);
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #f0f0f0;
+  margin: 0 0 15px 0;
+}
+
+.user,
+.admin {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.admin input,
+.user input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.admin label,
+.user label {
+  background: #472a2a;
+  border-radius: 8px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+.flashes {
+  color: #f0f0f0;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #Loginform {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .column1,
+  .column2 {
+    padding: 30px;
+  }
+
+  .h1 {
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .user,
+  .admin {
+    font-size: 18px;
+  }
+
+  .input-control {
+    margin: 15px 0;
+  }
+
+  .input-control input {
+    padding: 10px 15px;
+  }
+
+  .input-control label {
+    font-size: 16px;
+  }
+
+  .flashes {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  .column1,
+  .column2 {
+    padding: 20px;
+  }
+
+  .h1 {
+    font-size: 22px;
+    padding: 15px 25px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  .user,
+  .admin {
+    font-size: 16px;
+  }
+
+  .input-control input {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .input-control label {
+    font-size: 14px;
+  }
+
+  .flashes {
+    font-size: 22px;
+  }
+}

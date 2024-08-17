@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Inventory System</title>
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='main.css') }}"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script>
+        $(document).ready(function(){
+           $('#search-button').on('click', function(){
+              var query = $('#query').val();
+              $.get('/search', {entity: 'purchase', query: query}, function(data){
+                 $('#table-results').empty();
+                 data.forEach(function(purchase){
+                    $('#table-results').append(`
+                    <tr>
+                        <td>${ purchase.date }</td>
+                        <td>${ purchase.store }</td>
+                        <td>${ purchase.warranty_period }</td>   
+                        <td class="action">
+                            <a href="/edit_purchase/${ purchase.id }"><i class="fa fa-edit" style="font-size:24px"></i></a>
+                            <a href="/delete_purchase/${ purchase.id }"><i class="fa fa-trash-o" style="font-size:24px"></i></a>
+                        </td>
+                    </tr>
+                    `);
+                 });
+              });
+           });
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <a href="#" id="sidebar-icon">&#8801;</a>
+        <input type="search" id="query" name="search" placeholder="Search by Store🔍...">
+        <button id="search-button">Submit</button>
+        <a href="#"><img src="{{ url_for('static', filename='bg4.png') }}" alt="logo"></a>
+    </div>
+
+    <!--sidebar section-->
+    <section class="sidebar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='bg4.png') }}" alt="logo">
+        </div>
+        <div class="content">
+            <a href="/entry_point" class="home active"><i class="fas fa-home"></i>&nbsp; Home</a><br>
+            <a href="/employee" class="home"><i class="fas fa-user"></i>&nbsp;  Employee</a><br>
+            <a href="/equipment" class="home"><i class="fas fa-cogs"></i>&nbsp;  Assets</a><br>
+            <a href="/location" class="home"><i class="fas fa-building"></i>&nbsp;  Office</a><br>
+            <a href="/purchase" class="home"><i class="fas fa-shopping-cart"></i> &nbsp; Purchases</a><br>
+            <a href="/login" class="home"><i class="fas fa-sign-out-alt"></i>&nbsp;  Logout</a>
+          </div>
+    </section>
+    <h1 class="marquee">List of Purchases</h1>
+    <div class="purchase-form">
+        <a href="/add-purchase" class="btn1">+ Add Purchase</a>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Purchase Date</th>
+                    <th>Price Of Assets</th>
+                    <th>Name Of Assets</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-results">
+                {% for purchase in purchases %}
+                    <tr>
+                        <td>{{ purchase.date }}</td>
+                        <td>{{ purchase.store }}</td>
+                        <td>{{ purchase.warranty_period }}</td>   
+                        <td class="action">
+                            <a href="/edit_purchase{{ purchase.id }}"><i class="fa fa-edit" style="font-size:24px"></i></a>
+                            <a href="/delete_purchase{{ purchase.id }}"><i class="fa fa-trash-o" style="font-size:24px"></i></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var sidebarIcon = document.getElementById("sidebar-icon");
+          var sidebar = document.querySelector(".sidebar");
+          var purchaseform = document.querySelector(".purchase-form");
+          var marquee = document.querySelector(".marquee");
+  
+          sidebarIcon.addEventListener("click", function() {
+              sidebar.classList.toggle("show");
+              purchaseform.classList.toggle("full-width");
+              marquee.classList.toggle("test");
+  
+              if (sidebar.classList.contains("show")) {
+                sidebarIcon.innerHTML = "&#8801;"; // Change the icon to &#9666; when the sidebar is shown
+              } else {
+                sidebarIcon.innerHTML = "&#8801;"; // Change the icon to &#x2630; when the sidebar is hidden
+              }
+          });
+        });
+      </script>
+</body>
+</html>

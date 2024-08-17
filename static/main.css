@@ -1,0 +1,316 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  background-color: #f0f0f0;
+  height: auto;
+}
+
+.header {
+  background:  #919191;
+  padding: 25px;
+}
+
+.header input {
+  padding: 5px 15px;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+  margin-left: 350px;
+}
+
+.header button {
+  padding: 5px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  background: #707576;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header button:hover {
+  background: darkslategrey;
+  color: black;
+  font-weight: bold;
+}
+
+.header img {
+  width: 45px;
+  height: 45px;
+  background: #707576;
+  border-radius: 50%;
+  float: right;
+  justify-content: center;
+  margin-right: 50px;
+  transition: transform 0.3s ease;
+}
+
+.header img:hover {
+  transform: scale(1.1);
+}
+
+#sidebar-icon {
+  margin-left: 310px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  #sidebar-icon {
+      margin-left: 10px;
+  }
+}
+
+#login-name {
+  margin-right: 150px;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  top: 10px;
+  right: 0%;
+  position: absolute;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px; /* Adjusted to match the image */
+  height: 100vh; /* Adjusted to cover the full height */
+  background: #a5c3c9;
+  border-top: 5px solid #fff;
+  border-radius: 0 20px 20px 0;
+  overflow: hidden;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.sidebar:hover {
+  background: #92b5bc;
+}
+
+.logo {
+  width: 220px;
+  height: 180px;
+  background: rgba(104, 135, 106, 0.938);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 20px 0 0;
+}
+
+.logo img {
+  width: 180px;
+  display: block;
+  margin: auto;
+  background-color: rgba(59, 112, 63, 0.938);
+  border-radius: 20px;
+}
+
+.content {
+  background: #707576;
+  width: 220px;
+  height: calc(100vh - 180px); /* Adjust height based on logo height */
+  position: fixed;
+  top: 180px;
+  z-index: 1;
+  border-top: 5px solid #fff;
+  overflow-y: auto;
+  border-radius: 0 0 20px 0;
+}
+
+.content a {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  border-bottom: 5px solid white;
+  padding: 10px 15px; /* Smaller padding for smaller buttons */
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.content a:hover {
+  background: #5b6162;
+  transform: translateX(10px);
+}
+
+.home {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background: #666262;
+  cursor: pointer;
+}
+
+.active, .home:hover {
+  background: darkslategrey;
+  color: black;
+  font-weight: bold;
+}
+
+h1 {
+  display: flex;
+  font-size: 40px; /* Adjusted size */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 240px; /* Adjusted to align with the sidebar */
+  margin-top: 40px;
+  color: #333;
+}
+
+.location-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 25px; */
+  margin-left: 300px;
+}
+
+.purchase-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 25px; */
+  margin-left: 300px;
+}
+
+table {
+  width: 90%; /* Slightly reduce width for better padding */
+  max-width: 1000px;
+  border-collapse: separate; /* Use separate borders for a modern look */
+  border-spacing: 0; /* No spacing between cells */
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  border-radius: 12px; /* Increased rounding for a softer look */
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+}
+
+th, td {
+  padding: 18px; /* Slightly increased padding */
+  text-align: left;
+  font-size: 1em; /* Use relative font size for better scaling */
+  border-bottom: 1px solid #ddd; /* Light border between rows */
+}
+
+th {
+  background-color: #c6e8f6;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #b0d8ec; /* Slightly darker border for header */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Lighter gray for even rows */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f1f1f1; /* Slightly lighter gray for odd rows */
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0; /* Light gray on hover */
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 100%; /* Full width for small screens */
+    font-size: 0.9em; /* Slightly smaller font size for better readability */
+  }
+
+  th, td {
+    padding: 14px; /* Reduced padding for smaller screens */
+  }
+}
+
+
+.btn1 {
+  background: darkgreen;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 30px;
+  border-radius: 15px; /* Smoother border radius */
+  transition: background-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  margin-top: -20px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn1:hover {
+  background: #006400; /* Slightly darker green on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+
+.marquee-container {
+  overflow: hidden;
+  margin-right: 100px;
+  margin-left: 400px;
+  behavior: inherit;
+}
+
+.marquee {
+  text-align: center;
+} 
+
+
+.action a{
+  margin-left: 10px;
+}
+
+.action .fa-trash-o{
+  color: red;
+}
+
+.sidebar.show {
+  transform: translateX(-100%);
+}
+
+.location-form.full-width {
+  margin-left: 0;
+}
+
+.purchase-form.full-width {
+  margin-left: 0;
+}
+
+.marquee.test{
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .location-form.full-width {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .purchase-form.full-width {
+    margin-left: 10px;
+  }
+}
