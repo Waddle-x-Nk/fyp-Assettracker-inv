@@ -18,7 +18,7 @@ Search and Filtering: The system provides search and filtering capabilities to e
 > **Installation**
 
 step1: Clone the repository.
-git clone https://github.com/Aristocratjnr/device-inventory-system.git
+
 
 
 Step2: Navigate to the project directory.
