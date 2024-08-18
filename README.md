@@ -1,15 +1,17 @@
 # Device-inventory-system
-The Device Inventory System is a Python-based application that helps companies keep track of their equipment and manage their inventory efficiently.
+The Device Inventory System is a Python-based application that helps companies keep track of their equipment and  generally manage their inventory efficiently.
+
+This project is intended for startups in ghana.
 
 # Features
 - User Authentication: The system allows users to register, login, and manage their accounts securely.
-- Equipment Management: Users can add, update, and delete equipment from the inventory.
-- Search and Filtering: The system provides search and filtering capabilities to easily find specific equipment based on their names.
+- Asset Management: Users can add, update, and delete equipment from the inventory.
+- Search and Filtering: The system provides search and filtering capabilities to easily find specific assets based on their names.
 
 # Installation
 - step1: Clone the repository.
 ```bash
-git clone https://github.com/Aristocratjnr/device-inventory-system.git
+
 ```
 
 - Step2: Navigate to the project directory.
@@ -46,6 +48,6 @@ username: David
 password: junior1
 ```
 
-2. Navigate through the user-friendly interface to manage equipment, search for items, generate reports, and perform other actions.
+2. Navigate through the user-friendly interface to manage assets, search for items, and perform other actions.
 
-3. Explore the different features and functionalities of the system to effectively manage your inventory.
+3. Explore the different features and functionalities of the system to effectively manage your inventory as a startup owner.
