@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, redirect, jsonify, Response, 
 import sqlite3
 from flask_sqlalchemy import SQLAlchemy
 
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///OIS.db'
 app.secret_key = 'your_secret_key_here'
