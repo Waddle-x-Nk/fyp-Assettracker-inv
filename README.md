@@ -1,11 +1,12 @@
 # Device-inventory-system
-The Device Inventory System is a Python-based application that helps companies keep track of their equipment and  generally manage their inventory efficiently.
+The Device Inventory System is a Python-based application developed using FLASK framework that helps companies keep track of their assets and  generally manage their inventory efficiently.
 
 This project is intended for startups in ghana.
 
 # Features
 - User Authentication: The system allows users to register, login, and manage their accounts securely.
-- Asset Management: Users can add, update, and delete equipment from the inventory.
+- Asset Management: Users can add, update, and delete assets from the inventory.
+- Asset tracking: Assets could be assigned to employees 
 - Search and Filtering: The system provides search and filtering capabilities to easily find specific assets based on their names.
 
 # Installation
@@ -47,6 +48,8 @@ login as: admin
 username: David
 password: junior1
 ```
+
+The logins could be created in app for the users and admin roles
 
 2. Navigate through the user-friendly interface to manage assets, search for items, and perform other actions.
 
