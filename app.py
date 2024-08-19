@@ -4,11 +4,12 @@ from flask import Flask, render_template, request, redirect, jsonify, Response, 
 import sqlite3
 from flask_sqlalchemy import SQLAlchemy
 
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///OIS.db'
 app.secret_key = 'your_secret_key_here'
 db=SQLAlchemy(app)
+
+#this is the entire backend of the whole project
 
 class Location(db.Model):
     __tablename__ = "locations"
@@ -252,6 +253,7 @@ def add_equipment_details():
     return 'Method Not Allowed', 405
 
 @app.route('/purchase')
+
 def purchase():
     purchases = Purchase.query.all()
     return render_template('purchaseList.html', purchases=purchases)
@@ -439,3 +441,6 @@ def search():
 
 if __name__ == '__main__':
     app.run(host='localhost', port=8080, debug=True)
+
+
+
