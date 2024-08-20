@@ -11,6 +11,8 @@ db=SQLAlchemy(app)
 
 #this is the entire backend of the whole project
 
+
+#
 class Location(db.Model):
     __tablename__ = "locations"
     id=db.Column(db.Integer, primary_key=True)
@@ -55,7 +57,7 @@ class Employee(db.Model):
     def __repr__ (self):
         return f"{self.employee_name}, {self.gender}, {self.title}, {self.type}, {self.phone_number}, {self.department}, {self.location}"    
   
-   
+#this is a db funcion   
 class Purchase(db.Model):
     __tablename__ = "purchases"
     id=db.Column(db.Integer, primary_key=True)
