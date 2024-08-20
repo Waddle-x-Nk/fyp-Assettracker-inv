@@ -12,7 +12,7 @@ db=SQLAlchemy(app)
 #this is the entire backend of the whole project
 
 
-#
+#more updates will be done
 class Location(db.Model):
     __tablename__ = "locations"
     id=db.Column(db.Integer, primary_key=True)
