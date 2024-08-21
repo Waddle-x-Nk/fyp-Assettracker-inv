@@ -1,6 +1,7 @@
 #these must me installed before the app will run
 #if they arent installing try installing them manually
 blinker==1.7.0
+bcrypt
 click==8.1.7
 Flask==3.0.2
 Flask-SQLAlchemy==3.1.1
