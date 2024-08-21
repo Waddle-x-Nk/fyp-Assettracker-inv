@@ -13,7 +13,9 @@ This project is intended for startups in ghana.
 # Installation
 - step1: Clone the repository.
 ```bash
+
 https://github.com/Waddle-x-Nk/fyp-Assettracker-inv.git
+
 ```
 
 - Step2: Navigate to the project directory.
@@ -32,20 +34,35 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 the required dependencies and modules include:
+
 blinker==1.7.0 or later 
+
 click==8.1.7 or later
+
 Flask==3.0.2 or later
+
 Flask-SQLAlchemy==3.1.1 or later
+
 greenlet==3.0.3 or later
+
 itsdangerous==2.1.2 or later
+
 Jinja2==3.1.3 or later
+
 MarkupSafe==2.1.5 or later
+
 pip==23.2 or later
+
 setuptools==68.1.2 or later
+
 SQLAlchemy==2.0.25 or later
+
 typing_extensions==4.9.0 or later
+
 Werkzeug==3.0.1 or later
+
 passlib
+
 
 
 if there is an error encounted in the installation of of requirements.txt fill. It is recommended that they are installed individually
