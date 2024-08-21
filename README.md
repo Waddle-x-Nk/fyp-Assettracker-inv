@@ -32,16 +32,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 the required dependencies and modules include:
-blinker==1.7.0
-click==8.1.7
-Flask==3.0.2
-Flask-SQLAlchemy==3.1.1
-greenlet==3.0.3
-itsdangerous==2.1.2
-Jinja2==3.1.3
-MarkupSafe==2.1.5
-pip==23.2
-setuptools==68.1.2
+blinker==1.7.0 or later 
+click==8.1.7 or later
+Flask==3.0.2 or later
+Flask-SQLAlchemy==3.1.1 or later
+greenlet==3.0.3 or later
+itsdangerous==2.1.2 or later
+Jinja2==3.1.3 or later
+MarkupSafe==2.1.5 or later
+pip==23.2 or later
+setuptools==68.1.2 or later
 SQLAlchemy==2.0.25 or later
 typing_extensions==4.9.0 or later
 Werkzeug==3.0.1 or later
