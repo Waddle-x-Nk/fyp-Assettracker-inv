@@ -13,7 +13,7 @@ This project is intended for startups in ghana.
 # Installation
 - step1: Clone the repository.
 ```bash
-
+https://github.com/Waddle-x-Nk/fyp-Assettracker-inv.git
 ```
 
 - Step2: Navigate to the project directory.
