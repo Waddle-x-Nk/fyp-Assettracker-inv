@@ -6,6 +6,7 @@ This project is intended for startups in ghana.
 # Features
 - User Authentication: The system allows users to register, login, and manage their accounts securely.
 - Asset Management: Users can add, update, and delete assets from the inventory.
+- Asset Assignment: Admins can assign and reassign assets to employees
 - Asset tracking: Assets could be assigned to employees 
 - Search and Filtering: The system provides search and filtering capabilities to easily find specific assets based on their names.
 
@@ -30,6 +31,24 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+the required dependencies and modules include:
+blinker==1.7.0
+click==8.1.7
+Flask==3.0.2
+Flask-SQLAlchemy==3.1.1
+greenlet==3.0.3
+itsdangerous==2.1.2
+Jinja2==3.1.3
+MarkupSafe==2.1.5
+pip==23.2
+setuptools==68.1.2
+SQLAlchemy==2.0.25 or later
+typing_extensions==4.9.0 or later
+Werkzeug==3.0.1 or later
+passlib
+
+
+if there is an error encounted in the installation of of requirements.txt fill. It is recommended that they are installed individually
 
 - Step5: Start the Application.
 ```bash
