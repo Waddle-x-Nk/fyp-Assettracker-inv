@@ -1,4 +1,5 @@
 /* Dark Theme */
+/*hasnt been used yet*/
 body {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -9,6 +10,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 
 .container {
   display: flex;
