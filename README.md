@@ -50,6 +50,7 @@ passlib
 
 if there is an error encounted in the installation of of requirements.txt fill. It is recommended that they are installed individually
 
+
 - Step5: Start the Application.
 ```bash
 Python3 app.py
@@ -68,8 +69,8 @@ username: David
 password: junior1
 ```
 
-The logins could be created in app for the users and admin roles
+Upon login, the logins could be created in app for the users and admin roles
 
-2. Navigate through the user-friendly interface to manage assets, search for items, and perform other actions.
+2. Navigate through the user-friendly interface to manage assets, assign assets, search for items, and perform other administative actions.
 
 3. Explore the different features and functionalities of the system to effectively manage your inventory as a startup owner.
