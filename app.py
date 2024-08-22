@@ -13,7 +13,7 @@ app.secret_key = 'your_secret_key_here'
 db=SQLAlchemy(app)
 
 #this is the entire backend of the whole project
-
+#future changes will be made soon
 
 #more updates will be done
 class Location(db.Model):
