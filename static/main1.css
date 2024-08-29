@@ -3,17 +3,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: Verdana, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   height: auto;
 }
 
 .header {
-  background: #919191;
-  padding: 25px;
+  background: #22577A;
+  padding: 20px;
 }
 
 .header input {
-  padding: 5px 15px;
+  padding: 10px 15px;
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 5px;
@@ -24,7 +24,7 @@ body {
   padding: 5px 15px;
   font-size: 20px;
   border-radius: 5px;
-  background: #707576;
+  background: #22577A;
   color: #fff;
   font-weight: bold;
 }
@@ -38,7 +38,7 @@ body {
 .header img {
   width: 45px;
   height: 45px;
-  background: #707576;
+  background: #22577A;
   border-radius: 50%;
   float: right;
   justify-content: center;
@@ -51,8 +51,8 @@ body {
 }
 
 #sidebar-icon {
-  margin-left: 310px;
-  font-size: 25px;
+  margin-left: 220px;
+  font-size: 20px;
   text-decoration: none;
   color: #000;
   font-weight: bold;
@@ -70,13 +70,13 @@ body {
 #login-name {
   margin-right: 150px;
   float: right;
-  font-size: 30px;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 12px;
-  top: 10px;
+  top: 18px;
   right: 0%;
   position: absolute;
-  color: #fff;
+  color: #ffffff;
   padding: 10px 15px;
   border-radius: 10px;
   transition: background 0.3s ease, color 0.3s ease;
@@ -88,7 +88,7 @@ body {
   left: 0;
   width: 220px; /* Adjusted to match the image */
   height: 100vh; /* Adjusted to cover the full height */
-  background: #a5c3c9;
+  background: #22577A;
   border-top: 5px solid #fff;
   border-radius: 0 20px 20px 0;
   overflow: hidden;
@@ -96,7 +96,7 @@ body {
 }
 
 .sidebar:hover {
-  background: #92b5bc;
+  background: #22577A;
 }
 
 .logo {
@@ -111,6 +111,8 @@ body {
 
 .logo img {
   width: 180px;
+  height: 220px;
+
   display: block;
   margin: auto;
   background-color: rgba(59, 112, 63, 0.938);
@@ -118,7 +120,7 @@ body {
 }
 
 .content {
-  background: #707576;
+  background: #22577A;
   width: 220px;
   height: calc(100vh - 180px); /* Adjust height based on logo height */
   position: fixed;
@@ -133,17 +135,17 @@ body {
   display: flex;
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   border-bottom: 5px solid white;
-  padding: 10px 15px; /* Smaller padding for smaller buttons */
+  padding: 9px 12px; /* Smaller padding for smaller buttons */
   justify-content: center;
   transition: background 0.3s ease, transform 0.3s ease;
   border-radius: 10px;
   margin: 10px;
 }
 
-.content a:hover {
-  background: #5b6162;
+.content a:hover {2
+  background: #686869;
   transform: translateX(10px);
 }
 
@@ -151,7 +153,7 @@ body {
   border: none;
   outline: none;
   padding: 10px 16px;
-  background: #666262;
+  background: #22577A;
   cursor: pointer;
 }
 
@@ -163,7 +165,7 @@ body {
 
 h1 {
   display: flex;
-  font-size: 40px; /* Adjusted size */
+  font-size: 10px; /* Adjusted size */
   flex-wrap: wrap;
   justify-content: center;
   margin-left: 240px; /* Adjusted to align with the sidebar */
@@ -175,19 +177,19 @@ h1 {
 .cards {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Smaller gap for better spacing */
-  padding: 20px 0;
+  gap: 25px; /* Smaller gap for better spacing */
+  padding: 25px 0;
   margin-left: 310px;
 }
 
 /* Individual card styling */
 .card {
   width: 200px;
-  background-color: #6f6f6f; /* Use a neutral dark grey color */
-  padding: 20px;
+  background-color: #22577A; /* Use a neutral dark grey color */
+  padding: 10px;
   border-radius: 20px; /* Softer and larger curves for a modern look */
   text-align: right;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a more polished look */
+ /* Enhanced shadow for a more polished look */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -204,10 +206,11 @@ h1 {
 
 /* Number on the card styling */
 .card p {
-  font-size: 50px;
+  font-size: 30px;
+  color: #fff;
   margin: 0;
   font-weight: bold;
-  padding: 0;
+  padding: 15px;
   text-align: right; /* Align number to the right */
   /* Ensure no border or line is applied */
   border: none;
@@ -215,7 +218,8 @@ h1 {
 
 /* Text at the bottom of the card styling */
 .card h3 {
-  font-size: 16px;
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
   margin: 0;
   font-weight: normal;
   text-align: center; /* Align text to the center */
@@ -226,19 +230,19 @@ h1 {
 
 /* Individual card colors */
 #card1 {
-  background: #919191;
+  background: #22577A;
 }
 
 #card2 {
-  background: #919191;
+  background: #22577A;
 }
 
 #card3 {
-  background: #919191;
+  background: #22577A;
 }
 
 #card4 {
-  background: #acacac;
+  background: #22577A;
 }
 
 .sidebar.show {

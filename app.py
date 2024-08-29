@@ -15,6 +15,7 @@ db=SQLAlchemy(app)
 #this is the entire backend of the whole project
 #future changes will be made soon
 
+
 #more updates will be done
 class Location(db.Model):
     __tablename__ = "locations"
