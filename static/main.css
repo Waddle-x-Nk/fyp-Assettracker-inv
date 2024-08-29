@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-  background:  #22577A;
+  background:  #FFFFFF;
   padding: 20px;
 }
 
@@ -15,15 +15,16 @@ body {
   padding: 5px 15px;
   font-size: 17px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-left: 350px;
+  background-color: #F1F1F1;
 }
 
 .header button {
   padding: 5px 15px;
-  font-size: 20px;
-  border-radius: 5px;
-  background: #22577A;
+  font-size: 16px;
+  border-radius: 20px;
+  background: #cf816b;
   color: #fff;
   font-weight: bold;
 }
@@ -50,7 +51,7 @@ body {
 }
 
 #sidebar-icon {
-  margin-left: 310px;
+  margin-left: 220px;
   font-size: 25px;
   text-decoration: none;
   color: #000;
@@ -87,7 +88,7 @@ body {
   left: 0;
   width: 220px; /* Adjusted to match the image */
   height: 100vh; /* Adjusted to cover the full height */
-  background: #22577A;
+  background: #FFFFFF;
   border-top: 5px solid #fff;
   border-radius: 0 20px 20px 0;
   overflow: hidden;
@@ -95,13 +96,13 @@ body {
 }
 
 .sidebar:hover {
-  background: #92b5bc;
+  background: #FFFFFF;
 }
 
 .logo {
-  width: 220px;
+  width: 200px;
   height: 180px;
-  background: rgba(104, 135, 106, 0.938);
+  background: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,15 +110,15 @@ body {
 }
 
 .logo img {
-  width: 180px;
+  width: 200px;
   display: block;
   margin: auto;
-  background-color: rgba(59, 112, 63, 0.938);
-  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.938);
+  border-radius: 0px;
 }
 
 .content {
-  background: #22577A;
+  background: #FFFFFF;
   width: 220px;
   height: calc(100vh - 180px); /* Adjust height based on logo height */
   position: fixed;
@@ -139,6 +140,7 @@ body {
   transition: background 0.3s ease, transform 0.3s ease;
   border-radius: 10px;
   margin: 10px;
+  background: linear-gradient(to bottom, #e97e61, #ee5233);
 }
 
 .content a:hover {
@@ -166,8 +168,8 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   margin-left: 240px; /* Adjusted to align with the sidebar */
-  margin-top: 40px;
-  color: #333;
+  margin-top: 50px;
+  color: #8A3F30;
 }
 
 .location-form {
@@ -243,17 +245,18 @@ tbody tr:hover {
 
 
 .btn1 {
-  background: darkgreen;
-  color: #fff;
-  font-size: 1em;
+  background: #F9C2B8;
+  color: #201f1f;
+  font-size: 0.7em;
   padding: 8px 25px;
   border-radius: 15px; /* Smoother border radius */
   transition: background-color 0.25s, box-shadow 0.25s, transform 0.25s;
   margin-bottom: 20px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
   display: block;
   margin-top: -7px;
+  margin-right: -850px;
   font-weight: bold;
   justify-content: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */

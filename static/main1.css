@@ -8,7 +8,7 @@ body {
 }
 
 .header {
-  background: #22577A;
+  background: #FFFFFF;
   padding: 20px;
 }
 
@@ -76,7 +76,7 @@ body {
   top: 18px;
   right: 0%;
   position: absolute;
-  color: #ffffff;
+  color: #664747;
   padding: 10px 15px;
   border-radius: 10px;
   transition: background 0.3s ease, color 0.3s ease;
@@ -88,7 +88,7 @@ body {
   left: 0;
   width: 220px; /* Adjusted to match the image */
   height: 100vh; /* Adjusted to cover the full height */
-  background: #22577A;
+  background: #FFFFFF;
   border-top: 5px solid #fff;
   border-radius: 0 20px 20px 0;
   overflow: hidden;
@@ -96,13 +96,13 @@ body {
 }
 
 .sidebar:hover {
-  background: #22577A;
+  background: #ffffff;
 }
 
 .logo {
   width: 220px;
   height: 180px;
-  background: rgba(104, 135, 106, 0.938);
+  background: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +120,7 @@ body {
 }
 
 .content {
-  background: #22577A;
+  background: #FFFFFF;
   width: 220px;
   height: calc(100vh - 180px); /* Adjust height based on logo height */
   position: fixed;
@@ -142,6 +142,7 @@ body {
   transition: background 0.3s ease, transform 0.3s ease;
   border-radius: 10px;
   margin: 10px;
+  background: linear-gradient(to bottom, #ff9071, #ee5233);
 }
 
 .content a:hover {2
@@ -153,7 +154,7 @@ body {
   border: none;
   outline: none;
   padding: 10px 16px;
-  background: #22577A;
+  background: linear-gradient(to bottom, #F06D53, #8A3F30);
   cursor: pointer;
 }
 
@@ -230,20 +231,21 @@ h1 {
 
 /* Individual card colors */
 #card1 {
-  background: #22577A;
+  
+  background: linear-gradient(to bottom, #ff9071, #ee5233);
+
 }
 
 #card2 {
-  background: #22577A;
+  background: linear-gradient(to bottom, #ff9071, #ee5233);
 }
 
 #card3 {
-  background: #22577A;
+  background: linear-gradient(to bottom, #ff9071, #ee5233);
 }
 
 #card4 {
-  background: #22577A;
-}
+  background: linear-gradient(to bottom, #ff9071, #ee5233);
 
 .sidebar.show {
   transform: translateX(-100%);
