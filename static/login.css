@@ -116,8 +116,8 @@ body {
 }
 
 .mytext {
-  background: #7a7676;
-  color: #f0f0f0;
+  background: #d4d2d2;
+  color: #3D3D3D;
   padding: 15px 25px;
   text-align: center;
   margin: 0 0 50px 0;
@@ -127,13 +127,13 @@ body {
 }
 
 .column2 p {
-  background: rgba(109, 96, 96, 0.85);
+  background: #d4d2d2;
   text-align: center;
   padding: 15px;
   border-radius: 8px;
   font-weight: bold;
   font-size: 22px;
-  color: #f0f0f0;
+  color: #3D3D3D;
   margin: 0 0 15px 0;
 }
 
@@ -144,6 +144,8 @@ body {
   justify-content: center;
   font-weight: bold;
   font-size: 20px;
+  background: #d4d2d2;
+  border-radius: 10px;
 }
 
 .admin input,
@@ -155,17 +157,17 @@ body {
 
 .admin label,
 .user label {
-  background: #472a2a;
+  background: #d4d2d2;
   border-radius: 8px;
   padding: 6px 12px;
   display: flex;
   align-items: center;
-  color: #f0f0f0;
+  color: #3D3D3D;
   cursor: pointer;
 }
 
 .flashes {
-  color: #f0f0f0;
+  color: #3D3D3D;
   font-size: 32px;
   text-align: center;
   font-weight: bold;
