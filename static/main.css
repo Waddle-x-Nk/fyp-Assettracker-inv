@@ -30,7 +30,7 @@ body {
 }
 
 .header button:hover {
-  background: darkslategrey;
+  background: #cf816b;
   color: black;
   font-weight: bold;
 }
@@ -144,7 +144,7 @@ body {
 }
 
 .content a:hover {
-  background: #5b6162;
+  background: #cf816b;
   transform: translateX(10px);
 }
 
@@ -263,7 +263,7 @@ tbody tr:hover {
 }
 
 .btn1:hover {
-  background: #006400; /* Slightly darker green on hover */
+  background: #cf816b; /* Slightly darker green on hover */
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
   transform: translateY(-2px); /* Slight lift effect on hover */
 }
