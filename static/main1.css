@@ -30,7 +30,7 @@ body {
 }
 
 .header button:hover {
-  background: darkslategrey;
+  background: #ee5233;
   color: black;
   font-weight: bold;
 }
@@ -146,7 +146,7 @@ body {
 }
 
 .content a:hover {
-  background: #686869;
+  background: #ee5233;
   transform: translateX(10px);
 }
 
@@ -159,7 +159,7 @@ body {
 }
 
 .active, .home:hover {
-  background: darkslategrey;
+  background: #ee5233;
   color: black;
   font-weight: bold;
 }
