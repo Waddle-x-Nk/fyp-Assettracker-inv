@@ -64,7 +64,7 @@ Werkzeug==3.0.1 or later
 passlib
 
 
-
+use pip freeze > requirements.txt to get the update version of all the libraries. 
 if there is an error encounted in the installation of of requirements.txt fill. It is recommended that they are installed individually
 
 
