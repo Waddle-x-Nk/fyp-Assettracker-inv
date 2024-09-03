@@ -145,7 +145,7 @@ body {
   background: linear-gradient(to bottom, #ff9071, #ee5233);
 }
 
-.content a:hover {2
+.content a:hover {
   background: #686869;
   transform: translateX(10px);
 }
@@ -249,4 +249,5 @@ h1 {
 
 .sidebar.show {
   transform: translateX(-100%);
+}
 }
