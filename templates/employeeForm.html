@@ -22,22 +22,27 @@
             <!-- <div class="error"></div> -->
         </div>
         <div class="input-control">
-            <label for="password">Password:</label>
-            <input id="password" name="password" type="password" required>
-            <!-- <div class="error"></div> -->
-        </div>
-        <div class="input-control">
             <label for="gender">Gender:</label>
             <input id="gender" name="gender" type="text" required>
             <!-- <div class="error"></div> -->
         </div>
         <div class="input-control">
-            <label for="title">Title:</label>
+            <label for="password">Password:</label>
+            <input id="password" name="password" type="password" required>
+            <!-- <div class="error"></div> -->
+        </div>
+        <div class="input-control">
+            <label for="department">ID Type:</label>
+            <input id="department" name="department" type="text" required>
+            <!-- <div class="error"></div> -->
+        </div>
+        <div class="input-control">
+            <label for="title">ID Number:</label>
             <input id="title" name="title" type="text" required>
             <!-- <div class="error"></div> -->
         </div>
         <div class="input-control">
-            <label for="type">Type:</label>
+            <label for="type">User Type:</label>
             <select name="type" id="type" required>
                 <option value="null">--select type--</option>
                 <option name="type">User</option>
@@ -49,15 +54,11 @@
             <input id="phone_number" name="phone_number" type="number" required>
             <!-- <div class="error"></div> -->
         </div>
+       
         <div class="input-control">
-            <label for="department">Department:</label>
-            <input id="department" name="department" type="text" required>
-            <!-- <div class="error"></div> -->
-        </div>
-        <div class="input-control">
-            <label for="location">Office:</label>
+            <label for="location">Department:</label>
             <select name="location" id="location" required>
-                <option value="null">--select office--</option>
+                <option value="null">--select department--</option>
                 {% for location in locations %}
                     <option name="location" >{{location.location_name}}</option>
                 {% endfor %}
