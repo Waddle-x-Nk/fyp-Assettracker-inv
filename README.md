@@ -1,5 +1,6 @@
 # Device-inventory-system
 The Device Inventory System is a Python-based application developed using FLASK framework that helps companies keep track of their assets and  generally manage their inventory efficiently.
+This project was developed by Obed Attepor and Nana Kwame Owusu Antwi as our Final year Porject
 
 This project is intended for startups in ghana.
 As a pilot program my client was Ispace Ghana 
